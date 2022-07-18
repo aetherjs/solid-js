@@ -6,6 +6,8 @@
 
 > 📘 A module should be responsible for only one actor. As a consequence, it has only one reason to change.
 
+Example of single responsibility refactoring can be found in [todolist.js](src/todolist.js).
+
 ### Open closed principle
 
 > 📘 Modules should be open for extension but closed for modification.
