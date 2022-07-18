@@ -1,0 +1,12 @@
+{
+  "name": "solid-js",
+  "version": "1.0.0",
+  "description": "Playground for OOP in js",
+  "main": "index.js",
+  "repository": "https://github.com/aetherjs/solid-js.git",
+  "author": "aetherjs",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
