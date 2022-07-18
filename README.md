@@ -1,1 +1,1 @@
-# solid-js
+# SOLID Principles Playground
