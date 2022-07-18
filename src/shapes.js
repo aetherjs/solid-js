@@ -11,7 +11,7 @@ class Rectangle {
     get height() {
       return this._height
     }
-  
+
     set width(value) {
       this._width = value
     }
@@ -19,7 +19,7 @@ class Rectangle {
     set height(value) {
       this._height = value
     }
-  
+
     getArea() {
       return this._width * this._height
     }
@@ -28,6 +28,16 @@ class Rectangle {
 export class Square extends Rectangle {
     constructor(side_length) {
       super(side_length, side_length)
+    }
+
+    // We refactor square class as follows to correct its behaviour independently from the parent class
+
+    set width(value) {
+        this._width = this._height = value
+    }
+    
+    set height(value) {
+        this._width = this._height = value
     }
 }
   

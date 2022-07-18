@@ -16,6 +16,8 @@ Example of single responsibility refactoring can be found in [todolist.js](src/t
 
 > 📘 If you have a function, that works for a base type, it should work for a derived type
 
+Example can be found in [shapes.js](src/shapes.js) file. We correct the behaviour of the ```Square``` type so that the function defined for parent class ```Rectangle``` works correctly all of the time.
+
 ### Interface segregation principle
 
 > 📘 Clients should not be forced to depend upon interfaces that they do not use

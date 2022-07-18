@@ -1,6 +1,6 @@
 import { expect } from "chai";
 import { describe } from "mocha";
-import {Square} from "../src/shapes.js"
+import { Square } from "../src/shapes.js"
 
 describe('Liskov substitution principle', function() {
     it('Shapes example should follow the L principle', function() {
