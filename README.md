@@ -14,11 +14,19 @@ Objects can be produced by constructors, which are functions which initialize ob
 
 > 📘 A module should be responsible for only one actor. As a consequence, it has only one reason to change.
 
+A class or function should have one and the only reason to change. Each class should do one thing & do it well. Instead of thinking that we should split code because it would look cleaner in a single file, we split code up based on the users' social structure. Because that's what dictates change. Few things to note:
+
+- Don't put functions in the same class that change for various causes.
+- Think responsibilities (reason to change) regarding the user who will use it.
+- The class should be low coupling & high cohesive.
+
 Example of single responsibility refactoring can be found in [todolist.js](src/todolist.js).
 
 ### Open closed principle
 
 > 📘 Modules should be open for extension but closed for modification.
+
+Software entities (classes, modules, functions, and so on) should be extensible but not modifiable ( no change in old code). The above approach is based on the premise that we should be able to introduce new features without changing the present code.
 
 ### Liskov substitution principle
 
@@ -30,11 +38,19 @@ Example can be found in [shapes.js](src/shapes.js) file. We correct the behaviou
 
 > 📘 Clients should not be forced to depend upon interfaces that they do not use
 
+This approach aims to reduce the negative consequences of using large interfaces by breaking them down into smaller ones. It's similar to the Single Responsibility Principle, which asserts that any class or interface should be used for only one purpose.
+
+> Note: JS does not have an interface
+
+Clients should not be exposed to methods that they do not require (design a tiny interface that does not force any class or function to use an interface they do not wish to use).
+
 An example (rather limited, cause JS doesn't even have interfaces) can be found in the [phones.js](src/phones.js) file.
 
 ### Dependency Inversion principle
 
 > 📘 High-level modules should not depend on low-level modules
+
+
 
 ## Run With
 
