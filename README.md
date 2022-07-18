@@ -1,12 +1,17 @@
-### SOLID Principles Playground
+## SOLID Principles Playground
 
 **S.O.L.I.D.** STANDS FOR:
-- S — Single responsibility principle
-- O — Open closed principle
-- L — Liskov substitution principle
-- I — Interface segregation principle
-- D — Dependency Inversion principle
 
-### Run With
+### Single responsibility principle
+
+### Open closed principle
+
+### Liskov substitution principle
+
+### Interface segregation principle
+
+### Dependency Inversion principle
+
+## Run With
 
 ```node src/index.js```
