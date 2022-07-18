@@ -14,12 +14,17 @@ class TodoList {
     toString() {
       return this.items.toString()
     }
-  
+}
+
+// Refarctor the file so that the TodoList class isn't responsible
+// for saving and loading stuff from files.
+
+class FileManager {
     save(filename) {
-      fs.writeFileSync(filename, this.toString())
+        fs.writeFileSync(filename, this.toString())
     }
-  
+    
     load(filename) {
-      // Loads file from the system
-    }
+        // Loads file from the system
+    }  
 }
