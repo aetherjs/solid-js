@@ -27,3 +27,7 @@ Example of single responsibility refactoring can be found in [todolist.js](src/t
 ## Run With
 
 ```node src/index.js```
+
+Additionally can run some assertions/tests with:
+
+```yarn test```
